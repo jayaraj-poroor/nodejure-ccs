@@ -1,2 +1,2 @@
-# shelloid-clj
-Shelloid clojure code
+# nodejure-ccs 
+Nodejure Clojure Compute Service
