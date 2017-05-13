@@ -1,0 +1,3 @@
+SELECT phone.temp FROM node LET phonenum='324' 
+WHERE avg(phone.temp) > 60 AND sum(phone.pressure) > 30
+ ACTION {log('${phone.temp}');} SAMPLE EVERY 3000

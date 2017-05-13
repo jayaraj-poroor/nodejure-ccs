@@ -1,0 +1,1 @@
+SELECT nodename, temp FROM node WHERE temp > 0 ACTION log('Temp too high: $temp at $nodename') SAMPLE EVERY 3000

@@ -1,0 +1,12 @@
+SELECT select_term (',' select_term)*
+FROM table-name
+WHERE where_expr
+HAVING having_expr
+COLOCATE (attib+)+
+ACTION action_term+
+SAMPLING PERIOD 1000
+
+qualified_name: ID ('.' ID)*
+function_name: ID
+
+select_term := qualified_name | function_name '(' select_term (',' select_term)* ')'

@@ -1,0 +1,4 @@
+SELECT sensortag.temp
+FROM node
+ACTION ioctl(sensortag.temp, "resolution", 1)
+SAMPLE "once"
